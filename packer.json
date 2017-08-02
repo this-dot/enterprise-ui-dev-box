@@ -45,6 +45,7 @@
     "scripts": [
       "scripts/ubuntu/apt.sh",
       "scripts/ubuntu/virtualbox.sh",
+      "scripts/common/utils.sh",
       "scripts/common/vagrant.sh",
       "scripts/common/sshd.sh",
       "scripts/common/git.sh",

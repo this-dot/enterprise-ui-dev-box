@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
+# Clear out all previous attempts
+rm -rf "/tmp/source-git/"
+
 # Get the dependencies for git, then get openssl
-sudo apt-get install build-essential -y 
-sudo apt-get install fakeroot -y
-sudo apt-get install dpkg-dev -y
+sudo apt-get install build-essential fakeroot dpkg-dev -y
 sudo apt-get build-dep git -y
 sudo apt-get install libcurl4-openssl-dev -y
-
 mkdir -p "/tmp/source-git/"
 cd "/tmp/source-git/"
 apt-get source git
