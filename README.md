@@ -31,6 +31,9 @@ Vagrant.configure("2") do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "thisdot/enterprise-ui-dev"
 
+  # if you do not wish to hard code your proxy settings, 
+  # you may use an environment variable on your host machine.
+  # For more information see https://github.com/tmatilai/vagrant-proxyconf#environment-variables-1
   if Vagrant.has_plugin?("vagrant-proxyconf")
     config.proxy.http     = "<your_proxy_config>"
     config.proxy.https    = "<your_proxy_config>"
