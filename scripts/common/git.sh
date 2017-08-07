@@ -26,3 +26,5 @@ dpkg-buildpackage -rfakeroot -b
 
 # Install
 find .. -type f -name "git_*ubuntu*.deb" -exec sudo dpkg -i \{\} \;
+
+sudo rm -rf /tmp/source-git/
