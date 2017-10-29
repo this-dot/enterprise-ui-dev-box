@@ -64,7 +64,7 @@
   }],
   "variables": {
     "compression_level": "6",
-    "cpus": "1",
+    "cpus": "2",
     "disk_size": "40000",
     "headless": "true",
     "iso_checksum": "a06cd926f5855d4f21fb4bc9978a35312f815fbda0d0ef7fdc846861f4fc4600",
