@@ -9,6 +9,7 @@ fi
 
 sudo apt-get -y install dkms
 sudo apt-get -y install make
+sudo apt-get install virtualbox-guest-dkms -y
 
 # Uncomment this if you want to install Guest Additions with support for X
 #sudo apt-get -y install xserver-xorg
