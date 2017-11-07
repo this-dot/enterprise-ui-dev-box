@@ -3,4 +3,5 @@
 set -e
 set -x
 
-sudo apt-get clean
+sudo apt-get clean -y
+rm VBoxGuestAdditions.iso
