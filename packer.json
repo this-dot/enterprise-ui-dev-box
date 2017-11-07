@@ -44,13 +44,12 @@
     "type": "shell",
     "scripts": [
       "scripts/ubuntu/apt.sh",
-      "scripts/ubuntu/virtualbox.sh",
-      "scripts/common/utils.sh",
-      "scripts/common/proxyman.sh",
-      "scripts/common/vagrant.sh",
       "scripts/common/sshd.sh",
-      "scripts/common/git.sh",
+	  "scripts/common/zsh.sh",
+      "scripts/common/utils.sh",
+      "scripts/common/vagrant.sh",
       "scripts/common/nvm.sh",      
+	  "scripts/common/watchman.sh",
 	  "scripts/ubuntu/cleanup.sh",
       "scripts/common/minimize.sh"
     ]
@@ -64,11 +63,11 @@
   "variables": {
     "compression_level": "6",
     "cpus": "2",
-    "disk_size": "80000",
+    "disk_size": "160000",
     "headless": "true",
     "iso_checksum": "a06cd926f5855d4f21fb4bc9978a35312f815fbda0d0ef7fdc846861f4fc4600",
     "iso_checksum_type": "sha256",
-    "memory": "2048",
+    "memory": "2650",
     "mirror": "http://releases.ubuntu.com",
     "ssh_timeout": "60m"
   }
