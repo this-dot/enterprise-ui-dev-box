@@ -25,3 +25,10 @@ This virtual box image makes it easier for developers behind corporate firewalls
 - When virtualbox shows the import dialog select the 'Reinitialize the MAC address of all network cards'.
 - Once its imported into virtualbox, right click the machine, click on 'Settings', go to the 'Network' tab and change it from 'NAT' to 'Bridged Adapter'.
 - Start the machine & login with the credentials `vagrant`/`vagrant`. Run `ifconfig` to find its ip. You can use the ip from the response to ssh into the vm from your host machine using a ssh client like putty.
+
+## Release a new image
+- Requirements
+  - [packer](https://www.packer.io/downloads.html)
+  - [Virtualbox](https://www.virtualbox.org/)
+- Run `packer build packer.json`
+- Run `tar -cvzf virtualbox-iso.tgz virtualbox-iso`

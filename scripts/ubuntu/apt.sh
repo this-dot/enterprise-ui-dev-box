@@ -44,7 +44,9 @@ sudo apt-fast install \
 	libssl-dev \
 	libtool \
 	libtool-bin \
+	locate \
 	make \
+	man \
 	python-dev \
 	python-software-properties \
 	ruby \
@@ -60,6 +62,10 @@ sudo apt-fast install \
 	zsh \
 	-y
 
-sudo apt-get update --fix-missing -y
+sudo apt-fast update --fix-missing -y
 
-sudo apt-get install -f -y
+sudo apt-fast install -f -y
+
+sudo apt-get upgrade -y
+
+sudo updatedb
