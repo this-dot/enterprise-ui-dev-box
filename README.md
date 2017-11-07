@@ -4,11 +4,19 @@ This Vagrant box makes it easier for developers behind corporate firewalls to us
 
 ## What does it come installed with?
 
-1. Git with OpenSSL (source)[https://gist.github.com/pescobar/6ae5634f92d75d23c36a] - makes Git more resiliant when interacting with a remote server through a corporate proxy
-2. [nvm.js](https://github.com/creationix/nvm) - makes it possible to select version of node that you need.
-3. [yarn](http://yarnpkg.com) - a popular npm alternative
-4. vim
-5. curl
+1. Git
+1. [HTTPie](https://httpie.org/) - a command line HTTP client with intuitive UI, JSON support, syntax highlighting & more
+1. [nvm.js](https://github.com/creationix/nvm) - makes it possible to select version of node that you need.
+1. [fzf](https://github.com/junegunn/fzf) - a cmd line fuzzy finder. Useful tool to lookup files & history. Here's a [5 minute video](https://www.youtube.com/watch?v=AX3u10bruOI) on how to use it.
+1. [Git extras](https://github.com/tj/git-extras/blob/master/Commands.md) - Additional git commands to supercharge your workflow.
+1. [ag](https://github.com/ggreer/the_silver_searcher/blob/master/README.md)
+1. [oh-my-zsh](https://www.youtube.com/watch?v=9jACAQ4MHWs) - a better alternative to bash.
+1. [aria2](https://aria2.github.io/) - a better command line download utility
+1. [yarn](http://yarnpkg.com) - a popular npm alternative
+1. vim
+1. curl
+1. [glances](https://nicolargo.github.io/glances/) - a system monitoring tool
+1. [watchman](https://facebook.github.io/watchman/) - A file watching service
 
 ## Getting started
 

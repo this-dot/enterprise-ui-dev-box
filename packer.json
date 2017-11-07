@@ -54,12 +54,6 @@
       "scripts/common/minimize.sh"
     ]
   }],
-  "post-processors": [{
-    "type": "vagrant",
-    "compression_level": "{{user `compression_level`}}",
-    "output": "enterprise-ui-dev.box",
-    "keep_input_artifact": true
-  }],
   "variables": {
     "compression_level": "6",
     "cpus": "2",
