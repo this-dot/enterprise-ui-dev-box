@@ -60,3 +60,6 @@ sudo apt-fast install \
 	zsh \
 	-y
 
+sudo apt-get update --fix-missing -y
+
+sudo apt-get install -f -y
