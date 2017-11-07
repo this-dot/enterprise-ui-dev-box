@@ -21,7 +21,7 @@ This virtual box image makes it easier for developers behind corporate firewalls
 ## Getting started
 
 - Download [virtualbox-iso.tgz](https://github.com/this-dot/enterprise-ui-dev-box/releases/) and extract it. 
-- Open packer-ubuntu-16.04-amd64.ovf
+- Open frontend-dev-box.ovf
 - When virtualbox shows the import dialog select the 'Reinitialize the MAC address of all network cards'.
 - Once its imported into virtualbox, right click the machine, click on 'Settings', go to the 'Network' tab and change it from 'NAT' to 'Bridged Adapter'.
 - Start the machine & login with the credentials `vagrant`/`vagrant`. Run `ifconfig` to find its ip. You can use the ip from the response to ssh into the vm from your host machine using a ssh client like putty.
