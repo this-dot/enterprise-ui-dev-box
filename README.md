@@ -17,9 +17,11 @@ This virtual box image makes it easier for developers behind corporate firewalls
 1. curl
 1. [glances](https://nicolargo.github.io/glances/) - a system monitoring tool
 1. [watchman](https://facebook.github.io/watchman/) - A file watching service
+1. Google Chrome if you download the 64bit version & Chromium on the 32 bit version
 
 ## Getting started
 
+- Depending on your OS' cpu architecture download the 32/64bit version of the following files.
 - Download [virtualbox-iso.tgz](https://github.com/this-dot/enterprise-ui-dev-box/releases/) and extract it. 
 - Open frontend-dev-box.ovf
 - When virtualbox shows the import dialog select the 'Reinitialize the MAC address of all network cards'.

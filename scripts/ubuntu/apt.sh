@@ -10,6 +10,15 @@ sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:apt-fast/stable -y
 sudo add-apt-repository ppa:git-core/ppa -y
 
+# Chrome installation 
+ARCH=$(uname -m)
+echo "Architecture is $ARCH"
+
+if [ "$ARCH" != "i686" ]; then
+	echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list  
+	wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -  
+fi
+
 # run update to make the new repo available
 sudo apt-get update -y
 
@@ -61,6 +70,12 @@ sudo apt-fast install \
 	zip \
 	zsh \
 	-y
+
+if [ "$ARCH" = "i686" ]; then
+	sudo apt-fast install chromium-browser -y
+else
+	sudo apt-fast install google-chrome-stable -y
+fi
 
 sudo apt-fast update --fix-missing -y
 
