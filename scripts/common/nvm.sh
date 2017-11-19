@@ -6,4 +6,17 @@ nvm install 8.6
 nvm alias default 8.6
 
 source ~/.bashrc
-npm install -g ember-cli eslint jscpd prettier typescript flow-bin  diff-so-fancy
+
+npm install -g \
+	bower \
+	diff-so-fancy \
+	ember-cli \
+	eslint \
+	flow-bin \
+	http-server \
+	jscpd \
+	node-sass \
+	prettier \
+	sass-lint \
+	typescript \
+	;
