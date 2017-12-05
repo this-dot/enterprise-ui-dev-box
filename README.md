@@ -29,9 +29,6 @@ This virtual box image makes it easier for developers behind corporate firewalls
 - Start the machine & login with the credentials `vagrant`/`vagrant`. Run `ifconfig` to find its ip. You can use the ip from the response to ssh into the vm from your host machine using a ssh client like putty.
 - Setup proxy settings based on the next section.
 
-## Proxy Setup
-- To setup proxy scripts go into the `~/machine_proxy_setup` and run `./main.py`
-- By default a function called `setup_proxy` is run whenever a new shell is opened, if you want to temporarily disable it for a shell session, then run `unset_proxy`
 
 ## Release a new image
 - Requirements
